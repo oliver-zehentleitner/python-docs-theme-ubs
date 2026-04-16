@@ -4,15 +4,15 @@ build-backend = "flit_core.buildapi"
 
 # project metadata
 [project]
-name = "python-docs-theme-lucit"
-version = "1.6.0"
-description = "The Sphinx theme for the CPython docs and related projects"
+name = "python-docs-theme-ubs"
+version = "1.0.0"
+description = "The Sphinx theme for the UNICORN Binance Suite documentation"
 readme = "README.md"
-urls.Code = "https://github.com/LUCIT-Systems-and-Development/python-docs-theme-lucit"
-urls.Download = "https://pypi.org/project/python-docs-theme-lucit/"
-urls.Homepage = "https://github.com/LUCIT-Systems-and-Development/python-docs-theme-lucit"
-urls."Issue tracker" = "https://github.com/LUCIT-Systems-and-Development/python-docs-theme-lucit/issues"
-license.text = "LSOSL"
+urls.Code = "https://github.com/oliver-zehentleitner/python-docs-theme-ubs"
+urls.Download = "https://pypi.org/project/python-docs-theme-ubs/"
+urls.Homepage = "https://github.com/oliver-zehentleitner/python-docs-theme-ubs"
+urls."Issue tracker" = "https://github.com/oliver-zehentleitner/python-docs-theme-ubs/issues"
+license.text = "PSF-2.0"
 requires-python = ">=3.8"
 
 # Classifiers list: https://pypi.org/classifiers/
@@ -30,19 +30,21 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
 ]
 
 [[project.authors]]
-name = "LUCIT"
-email = "info@lucit.tech"
+name = "Oliver Zehentleitner"
 
 [project.entry-points."sphinx.html_themes"]
-python_docs_theme_lucit = 'python_docs_theme_lucit'
+python_docs_theme_ubs = 'python_docs_theme_ubs'
 
 [tool.flit.module]
-name = "python_docs_theme_lucit"
+name = "python_docs_theme_ubs"
 
 [tool.flit.sdist]
 include = [
-    "python_docs_theme_lucit/",
+    "python_docs_theme_ubs/",
 ]
