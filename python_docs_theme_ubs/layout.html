@@ -15,17 +15,8 @@
           {%- endfor %}
           {%- block rootrellink %}
               {% if github_repo_name %}
-                  {% if not lucit %}
-              <li><img src="{{ pathto('_static/' + theme_github_icon, 1) }}" alt="GitHub Logo"
-                       style="vertical-align: middle; margin-top: -1px"/></li>
+              <li><img src="{{ pathto('_static/' + theme_github_icon, 1) }}" alt="GitHub Logo" style="vertical-align: middle; margin-top: -1px"/></li>
               <li><a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}">{{project_name}}</a>{{ reldelim1 }}</li>
-                  {% endif %}
-                  {% if lucit %}
-              <li><img src="{{ pathto('_static/' + theme_lucit_icon, 1) }}" alt="LUCIT Logo"
-                       style="vertical-align: middle; margin-top: -1px"/></li>
-              <li><a href="https://github.com/oliver-zehentleitner/unicorn-binance-suite#documentation">Docs Index</a> | </li>
-              <li><a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}">{{project_name}}</a>{{reldelim1}}</li>
-                  {% endif %}
               {% endif %}
               {% if theme_root_include_title %}
               <a href="{{ pathto('index') }}">Docs</a>{{reldelim1}}
@@ -106,16 +97,9 @@
         <nav class="menu" role="navigation" aria-label="main navigation">
             <p class="logo">
                 <div style="text-align: center;">
-                    <a href="https://www.lucit.tech"><img src="https://www.lucit.tech/files/images/logos/LUCIT-LOGO.png"></a><br>
-                    <a href="https://shop.lucit.services/software/unicorn-binance-suite" style="font-size: 0.85em;font-weight: 900">Get a UNICORN Binance Suite License!</a><br>
-                    <br>
-                    <a href="https://github.com/LUCIT-Systems-and-Development" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-github-20.png"></a>
-                    <a href="https://fb.me/lucit.systems.and.development" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-facebook-20.png"></a>
-                    <a href="https://twitter.com/LUCIT_SysDev" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-twitter-20.png"></a>
-                    <a href="https://www.linkedin.com/company/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-linkedin-20.png"></a>
-                    <a href="https://www.xing.com/pages/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-xing-20.png"></a>
-                    <a href="https://medium.lucit.tech" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-medium-monogram-20.png"></a>
-                    <a href="https://www.youtube.com/channel/UCp57u8vaPqEWQTlfpYn-KnQ" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-youtube-20.png"></a>
+                    <a href="https://github.com/oliver-zehentleitner/unicorn-binance-suite">
+                        <img src="https://raw.githubusercontent.com/oliver-zehentleitner/unicorn-binance-suite/refs/heads/master/images/logo/UBS-Logo.png">
+                    </a>
                 </div>
             </p>
             {%- for sidebartemplate in sidebars %}
@@ -135,16 +119,7 @@
           {%- block sidebarlogo %}
             <p class="logo">
                 <div style="text-align: center;">
-                    <a href="https://www.lucit.tech"><img src="https://www.lucit.tech/files/images/logos/LUCIT-LOGO.png"></a><br>
-                    <a href="https://shop.lucit.services/software/unicorn-binance-suite" style="font-size: 0.85em;font-weight: 900">Get a UNICORN Binance Suite License!</a><br>
-                    <br>
-                    <a href="https://github.com/LUCIT-Systems-and-Development" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-github-20.png"></a>
-                    <a href="https://fb.me/lucit.systems.and.development" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-facebook-20.png"></a>
-                    <a href="https://twitter.com/LUCIT_SysDev" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-twitter-20.png"></a>
-                    <a href="https://www.linkedin.com/company/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-linkedin-20.png"></a>
-                    <a href="https://www.xing.com/pages/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-xing-20.png"></a>
-                    <a href="https://medium.lucit.tech" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-medium-monogram-20.png"></a>
-                    <a href="https://www.youtube.com/channel/UCp57u8vaPqEWQTlfpYn-KnQ" target="_blank" style="text-decoration:none;"><img src="{{ pathto('_static/', 1) }}icons8-youtube-20.png"></a>
+                    <a href="https://github.com/oliver-zehentleitner/unicorn-binance-suite"><img src="https://raw.githubusercontent.com/oliver-zehentleitner/unicorn-binance-suite/refs/heads/master/images/logo/UBS-Logo.png"></a><br>
                 </div>
             </p>
           {%- endblock %}
@@ -194,6 +169,6 @@
     {% if theme_issues_url %}{% trans %}<a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/issues/new/choose">Found a bug</a>?{% endtrans %}{% endif %}
     <br />
     {% trans sphinx_version=sphinx_version|e %}Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
-        with <a href="https://github.com/LUCIT-Systems-and-Development/python-docs-theme-lucit">python-docs-theme-lucit</a>.
+        with <a href="https://github.com/oliver-zehentleitner/python-docs-theme-ubs">python-docs-theme-ubs</a>.
     </div>
 {% endblock %}

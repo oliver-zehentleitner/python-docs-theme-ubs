@@ -1,7 +1,7 @@
 # You can set these variables from the command line.
 CPYTHON_PATH = ../cpython
 PYTHON       = python3
-PACKAGE_ABS_PATH = $(shell pwd)/$(shell find dist/python-docs-theme-lucit-*.tar.gz)
+PACKAGE_ABS_PATH = $(shell pwd)/$(shell find dist/python-docs-theme-ubs-*.tar.gz)
 
 
 .PHONY: help

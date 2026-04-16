@@ -6,8 +6,7 @@
 # Author: Oliver Zehentleitner
 #         https://about.me/oliver-zehentleitner
 #
-# Copyright (c) 2023, LUCIT and
-# Oliver Zehentleitner
+# Copyright (c) 2023, Oliver Zehentleitner
 # All rights reserved.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
