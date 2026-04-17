@@ -5,7 +5,7 @@ build-backend = "flit_core.buildapi"
 # project metadata
 [project]
 name = "python-docs-theme-ubs"
-version = "1.1.0"
+version = "1.1.1"
 description = "The Sphinx theme for the UNICORN Binance Suite documentation"
 readme = "README.md"
 urls.Code = "https://github.com/oliver-zehentleitner/python-docs-theme-ubs"

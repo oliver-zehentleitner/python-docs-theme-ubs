@@ -15,8 +15,8 @@
           {%- endfor %}
           {%- block rootrellink %}
               {% if github_repo_name %}
-              <li><img src="{{ pathto('_static/' + theme_github_icon, 1) }}" alt="GitHub Logo" style="vertical-align: middle; margin-top: -1px"/></li>
               <li><a href="https://oliver-zehentleitner.github.io/unicorn-binance-suite/docs_index.html">Docs Index</a> | </li>
+              <li><img src="{{ pathto('_static/' + theme_github_icon, 1) }}" alt="GitHub Logo" style="vertical-align: middle; margin-top: -1px"/></li>
               <li><a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}">{{project_name}}</a>{{ reldelim1 }}</li>
               {% endif %}
               {% if theme_root_include_title %}
