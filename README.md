@@ -2,7 +2,7 @@
 
 Forked from https://github.com/python/python-docs-theme
 
-The Sphinx theme for the [UNICORN Binance Suite documentation](oliver-zehentleitner.github.io/unicorn-binance-suite/docs_index.html).
+The Sphinx theme for the [UNICORN Binance Suite documentation](https://oliver-zehentleitner.github.io/unicorn-binance-suite/docs_index.html).
 
 ## Installation
 
